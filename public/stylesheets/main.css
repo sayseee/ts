@@ -54,10 +54,12 @@ body {
 }
 .logo { 
     min-width: 10%;
-	background-image: url('images/logo-white.png');
-	background-size: 169px 20px;
-    background-position: center 5px;
-    background-repeat: no-repeat;
+    display: -webkit-flex;
+    display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
 }
 .logo img {
     height: 1.999999rem;
