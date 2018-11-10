@@ -1,0 +1,42 @@
+body {
+    font-family: 'Averta';
+}
+/*POSITIONS*/
+
+
+/*COLORS*/
+.color-pink {
+    color: #de246e
+}
+.color-dark {
+    color: #12151d
+} 
+.color-light-dark {
+    color: #1c2432
+}
+.color-dark-blue {
+    color: #0485a6
+}
+.color-light-blue {
+    color: #00bbc1
+}
+/*BACKGROUNDS*/
+.bg-pink {
+    background-color: #de246e
+}
+.bg-dark {
+    background-color: #12151d
+} 
+.bg-light-dark {
+    background-color: #1c2432
+}
+.bg-dark-blue {
+    background-color: #0485a6
+}
+.bg-light-blue {
+    background-color: #00bbc1
+}
+.header {
+    height: 20%;
+    width: 100%;
+}
