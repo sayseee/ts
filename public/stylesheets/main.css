@@ -44,6 +44,10 @@ body {
     width: 100%;
 }
 
+.header>div {
+    display: inline-block;
+}
+
 /**/
 
 .logo {
