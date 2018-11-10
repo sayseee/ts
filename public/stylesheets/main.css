@@ -52,7 +52,11 @@ body {
 .browse, .notifications {
     width: 45%;
 }
-.logo img {
-    max-width: 100%;
-    height: auto !important;
-}
+.logo { 
+	min-height: 40px;
+    min-width: 10%;
+	background-image: url('images/logo-white.png');
+	background-size: 169px 20px;
+    background-position: center 5px;
+    background-repeat: no-repeat;
+	}
