@@ -52,10 +52,7 @@ body {
 .browse, .notifications {
     width: 45%;
 }
-.logo {
-    background-image: url('../images/logo-sprites.png');
-    background-position: left bottom;
-    background-repeat: no-repeat;    
-    height: 2rem;    
-    width: 9%;
+.logo img {  
+    height: 29px;    
+    width: auto;
 }
