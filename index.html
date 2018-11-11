@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <title>TS</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no">
   <link rel="manifest" href="/manifest.json">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="canonical" href="https://sayseee.github.io/ts/" />
@@ -24,22 +24,63 @@
   </script>
 </head>
 
-<body id="body">
-  <div class="header bg-dark">
-    <div class="browse left">
-        <div class="link-item-browse"></div>
+<body class="refreshing">
+    <div class="header bg-dark">
+      <div class="browse left">
+          <div class="link-item-browse"></div>
+      </div>
+      <div class="logo center"><img src="public/images/logo-white.png" alt="taasa"></div>
+      <div class="notifications right"></div>
     </div>
-    <div class="logo center"><img src="public/images/logo-white.png" alt="taasa"></div>
-    <div class="notifications right"></div>
+    
+<div class="refresher">
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
+    <div class="loading-bar"></div>
   </div>
-  <!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  
-  
+  <div class="wrapper refresher" id="inbox">
+    <h5 class="near caps"><strong>Task Near you</strong></h5>
+    <div class="card border">
+      <div class='image-avatar'><img src="public/images/avatar.jpg" alt="" class="avatar left"></div>
+      <div class="title right">Delivery of Flowers to Kamwokya.</div>
+      <div class="clearfix"></div>
+      <div class="date"></div>
+      <div class="budget">92,000 UGX</div>
+      <div class="clearfix"></div>
+      <div class="line"></div>
+      <div class="time-ago">5 mins ago</div>
+      <div class="due-date">Fri, 20 Nov</div>
+      <div class="status">OPEN</div>
+    </div>
+    <div class="annoucement">
+      <p>Do you have a leaking tap that needs a plumber? Or maybe a bed that needs assembling? 
+        <span class="ptask color-pink"> POST A TASK</span> on <strong>Taasa </strong>and get help.</p>
+    </div>
+
+
+
+  </div> 
+  <script>
+      let _startY;
+      const inbox = document.querySelector('#inbox');
+    
+      inbox.addEventListener('touchstart', e => {
+        _startY = e.touches[0].pageY;
+      }, {passive: true});
+    
+      inbox.addEventListener('touchmove', e => {
+        const y = e.touches[0].pageY;
+        // Activate custom pull-to-refresh effects when at the top of the container
+        // and user is scrolling up.
+        if (document.scrollingElement.scrollTop === 0 && y > _startY &&
+            !document.body.classList.contains('refreshing')) {
+          // refresh inbox.
+        }
+      }, {passive: true});
+    </script>
+    
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
   <script src="public/javascripts/breakpoints.min.js"></script>
   <script src="public/javascripts/browser.min.js"></script>
