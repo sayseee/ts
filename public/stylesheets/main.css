@@ -63,4 +63,5 @@ body {
 }
 .logo img {
     height: 1.999999rem;
+    vertical-align: bottom;
 }
