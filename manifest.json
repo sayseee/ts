@@ -4,6 +4,7 @@
   "theme_color": "#1c2432",
   "background_color": "#1c2432",
   "display": "standalone",
+  "orientation": "portrait",
   "Scope": "/",
   "start_url": "/https://sayseee.github.io/ts/",
   "icons": [
