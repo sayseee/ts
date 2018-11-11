@@ -1,9 +1,9 @@
 {
-  "name": "Service Marketplace",
-  "short_name": "TS",
+  "name": "Taasa",
+  "short_name": "Taasa",
   "theme_color": "#1c2432",
   "background_color": "#1c2432",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/",
   "start_url": "/https://sayseee.github.io/ts/",
   "icons": [
