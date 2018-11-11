@@ -41,7 +41,6 @@ body {
 .header {
     padding: 0.6rem 0 0;
     width: 100%;
-    min-height: 2.7rem;
 }
 
 .header>div {
